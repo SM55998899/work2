@@ -1,0 +1,156 @@
+html{
+    font-size: 100%;
+}
+body{
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 0.875rem;
+}
+.home{
+    position: fixed;
+    background-color: #fff;
+    border-radius: 20px;
+    border: solid 2px #333;
+    transition: 0.5s;
+}
+.home:hover{
+  
+    opacity: .4;
+    transition: .3s;
+ 
+}
+.content{
+    max-width: 1000px;
+    padding:  60px 10px;
+    margin: 0 auto;
+}
+.page-title{
+ margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-area {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+  .form-area dt{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 1.375rem;
+    font-weight: bold;
+    padding: 30px 15px;
+    margin-bottom: 2px;
+  }
+
+  .form-area dt span {
+    background-color: #fff;
+    color: #e85c4e;
+    font-size: 0.75rem;
+    padding: 0 8px;
+  }
+
+  .form-area dd {
+    width: 60%;
+    background-color: #fff;
+    padding: 22px 15px 20px 15px;
+    margin-bottom: 2px;
+  }
+  .form-area input {
+    background-color: #f2f2f2;
+    padding: 8px 10px;
+  }
+
+  .button-area {
+    text-align: center;
+  }
+
+  #submit-button {
+    background-color: #fff;
+    border-radius: 5px;
+    color: #333;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 20px 40px;
+    text-align: center;
+    transition: .5s;
+  }
+  #submit-button:hover {
+    transition: .3s;
+    color: #fff;
+    background-color: rgb(91, 38, 143);
+  }
+  #name {
+    width: 30%;
+  }
+  #tel1,
+  #tel2,
+  #tel3 {
+    max-width: 80px;
+  }
+  #reservation {
+    max-width: 200px;
+  }
+  .lesson {
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+  }
+  .lesson:first-child {
+    margin-bottom: 10px;
+  }
+  .note-online,
+  .note-venue {
+    padding: 0 30px;
+    margin-bottom: 30px;
+  }
+  .note-venue {
+    display: none;
+  }
+  /* エラーメッセージ用 */
+  .error-text {
+    color: #de3f2e;
+    margin-top: 2px;
+  }
+  #item{
+    width: 60%;
+    height: 300px;
+  }
+  #mail{
+    width:30% }
+
+    
+  
+  /*-------------------------------------------
+  SP
+  -------------------------------------------*/
+  @media screen and (max-width: 600px) {
+    .form-area {
+      flex-direction: column;
+    }
+    .form-area dt {
+      width: 100%;
+      display: block;
+      padding: 10px;
+      margin-bottom: 0;
+    }
+    .form-area dt span {
+      margin-left: 10px;
+    }
+    .form-area dd {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .form-area dd:last-child {
+      margin-bottom: 0;
+    }
+    .note-online,
+    .note-venue {
+      padding: 0 10px;
+    }
+  }

@@ -1,0 +1,414 @@
+html {
+    font-size: 100%;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(69, 69, 69);
+}
+main{
+    display: flex;
+}
+main img{
+    width: 60%;
+}
+
+#news h1{
+    margin-bottom: 20px;
+}
+#news h1,
+#news dl{
+text-align: center;
+}
+#news dt{
+    border-top: solid 1px #333;
+    padding-top: 15px;
+    font-size: 1.5rem;
+}
+#news dd{
+   font-size: 1.150rem;
+    padding-bottom: 15px;
+}
+#news dd:last-child{
+     border-bottom: solid 1px #333;
+}
+#news a{
+ 
+    transition: .5s;
+}
+#news a:hover{
+    color: darkorchid;
+    transition: .3s;
+}
+.blog{
+    margin-top: 400px;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.detail {
+    list-style: none;
+}
+
+.section-title {
+    font-size: 3.0rem;
+
+}
+/*news*/
+#news{
+    width: fit-content;
+padding-top: 150px;
+margin-left: 120px;
+}
+/*header*/
+#header li {
+    padding: 20px 0;
+    border-top: solid 1px #333;
+    text-align: center;
+    font-size: 1.45rem;
+    font-weight: bold;
+}
+
+#header {
+    display: flex;
+    padding: 20px;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px;
+
+}
+#header a{
+    transition: .5s
+}
+#header a:hover{
+    color: rgb(126, 79, 255);
+    transition: .3s;
+}
+.ac-menu .menu{
+    display: none;
+}
+.hamburger {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    top: 34px;
+    left: 265px;
+    transition: 0.3s;
+}
+
+.hamburger span {
+    display: block;
+    width: 44px;
+    height: 3px;
+    position: absolute;
+    background-color: #333;
+    transition: .3s ease-in-out;
+
+}
+
+
+/* 1本目の線の位置を設定 */
+.hamburger span:nth-child(1) {
+    top: 10px;
+}
+
+/* 2本目の線の位置を設定 */
+.hamburger span:nth-child(2) {
+    top: 23px;
+}
+
+/* 3本目の線の位置を設定 */
+.hamburger span:nth-child(3) {
+    top: 36px;
+}
+
+.hamburger.active span:nth-child(1) {
+    top: 18px;
+    left: 0px;
+    background: #333;
+    transform: rotate(-45deg);
+}
+
+/* 2本目と3本目は重ねて45度回転 */
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
+    top: 18px;
+    background: #333;
+    transform: rotate(45deg);
+}
+.mainvisual .main-bg{
+    position: absolute;
+    width: 35%;
+    height: 98%;
+    background-color: #333;
+    opacity: 0.6;
+    z-index: 5;  
+    font-size: 1.5rem;
+    
+}
+.mainvisual h1{
+    color: rgb(255, 255, 255);
+position: absolute;
+z-index: 6;
+font-size: 3.35rem;
+top: 70%;
+left: 26%;
+}
+
+#main .mainvisual {
+    z-index: 4;
+    width: 100%;
+    margin: 0 0 0 auto;
+}
+
+.mainvisual img {
+    width: 100%;
+}
+
+#slider {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#about {
+    display: flex;
+    padding: 100px 0;   
+}
+
+#about a{
+    font-weight: bold;
+    padding: 5px;
+    font-size: 2.0rem;
+    transition: .5s;
+    border: solid 3px #333;
+    border-radius: 10px;
+}
+#about a:hover{
+    color:rgb(255, 255, 255) ;
+    background-color: rgb(23, 23, 23);
+    transition: .3s;
+}
+.button1{
+ margin-top: 300px;
+}
+
+#services{
+    padding: 100px 0;
+  
+}
+
+.content-wrapper{
+    width: 75%;
+    margin: 0 0 0 auto;
+}
+.content-wrapper img{
+    z-index: 5;
+}
+.adult{
+    width: 30%;
+    z-index: 5;
+}
+#services ul li h1{
+    font-size: 2.2rem;
+}
+#services ul{
+    margin-top: 150px;
+    text-align: left;
+}
+#services ul li{
+    display: flex;
+    margin-bottom: 40px;
+}
+#services .section-title{
+    margin-bottom: 20px;
+}
+#services .adult a{
+    padding: 5px;
+    font-size: 2.0rem;
+    font-weight: bold;
+    border: solid 3px #333;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+#services .adult a:hover{
+    color:rgb(255, 255, 255) ;
+    background-color: rgb(23, 23, 23);
+    transition: .3s;
+}
+#services .button2{
+margin-top: 325px;
+
+}
+
+#footer{
+    background-color:rgb(201, 201, 201) ;
+}
+#footer .footer-menu{
+    justify-content: space-around;
+    display: flex;
+    padding-top: 20px;
+    margin-bottom: 100px;
+}
+
+.contact{
+   margin: 80px;
+}
+#footer .footer-menu .label{
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+#footer .footer-menu li{
+    margin-top: 15px;
+    font-size: 1.25rem;
+    font-weight: bold;
+
+}
+#footer .detail li a{
+    color: rgb(71, 71, 71);
+    transition: .5s;
+}
+#footer .detail li a:hover{
+    color: rgb(179, 0, 255);
+    transition: .3s;
+}
+#footer p{
+    text-align: center;
+    color: #333;
+}
+
+.slider8 .slick-slide {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+  }
+  .slider8 .slick-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #works{
+    margin-bottom: 80px;
+  }
+  #works .section-title{
+    margin-bottom: 30px;
+  }
+  .contact a{
+    font-size: 2.0rem;
+    font-weight: bold;
+  }
+  .contact h2{
+    font-size: 2.0rem;
+  }
+  .contact-child{
+    display: flex;
+    justify-content: space-around;
+  }
+  .contact-child a{
+    transition: .4s;
+  }
+  .contact-child a:hover{
+    color: rgb(179, 0, 255);
+    transition: .3s;
+  }
+@media screen and (max-width:900px) {
+    
+    .mainvisual {
+        z-index: 9;
+    }
+.content-wrapper{
+    width: 100%;
+}
+    #header {
+        width: 100%;
+
+        box-shadow: none;
+        z-index: 10;
+    }
+
+    #header .hamburger {
+        position: absolute;
+        top: 40px;
+        left: 300px;
+
+    }
+
+    #header .ac-menu {
+        width: 100%;
+
+    }
+
+
+    .mainvisual img {
+        height: 100vh;
+    }
+
+    #main .mainvisual {
+        width: 100%;
+
+    }
+
+    .mainvisual img {
+        width: 100%;
+    }
+
+    #about{
+    padding: 60px 0;
+        display: block;
+    }
+    #about .adult{
+        width: 100%;
+    }
+    .content-wrapper img{
+        width: 100%;
+    }
+
+    #services ul li{
+        display: block;
+        margin-bottom: 35px;
+    }
+ .adult{
+    width: 100%;
+ }
+ .mainvisual .main-bg,
+ .mainvisual h1{
+    display: none;
+ }
+
+ #footer .footer-menu .label,
+ #footer .footer-menu li{
+    font-size: 0.8rem;
+ }
+#footer .contact-child{
+    display: block;
+}
+ .bg{
+    display: none;
+ }
+ .contact{
+    display: block;
+ }
+ .button1{
+    margin-top: 20px;
+ }
+ #news{
+    display: none;
+ }
+}
